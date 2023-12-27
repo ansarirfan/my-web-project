@@ -1,0 +1,38 @@
+
+<html>
+<head>
+	<!-- -----google font awsome cdn --------- -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" href="styles.css">
+	<title>Registration form designe</title>
+	<!-- -------jqurey cdn ------- -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script src="jquery.passwordstrength.js"></script>
+</head>
+<body>
+	<form>
+		<img src="login.jpg" >
+		<div class="input-box">
+			<span> <i class="fa fa-user-o"></i> </span>
+			<input type="text" placeholder="Use Nmme" required>
+		</div>
+		<div class="input-box">
+			<span> <i class="fa fa-envelope-o"></i> </span>
+			<input type="email" placeholder="email id" required>
+		</div>
+		<div class="input-box">
+			<span> <i class="fa fa-key"></i> </span>
+			<input type="password" id="password" placeholder="password" required>
+		</div>
+		<button type="submit">  <i class="fa fa-sign-in"></i> Register</button>
+	</form>
+
+	<script type="text/javascript">
+    $(function() {
+        $("#password").passwordStrength();
+    });
+</script>
+	
+</body>
+</html>

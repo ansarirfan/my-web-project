@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>picture gallery</title>
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="img/betty.jpg" id="fullImg">
+        <span onclick="coloseFullImg()">X</span>
+    </div>
+    <div class="img-gallery" >
+        <img src="img/girl.jpg" onclick="openFullImg(this.src)">
+        <img src="img/girl5.jpg" onclick="openFullImg(this.src)">
+        <img src="img/girl6.jpg" onclick="openFullImg(this.src)">
+        <img src="img/girl7.jpg" onclick="openFullImg(this.src)">
+        <img src="img/poly.jpg" onclick="openFullImg(this.src)">
+        <img src="img/betty.jpg" onclick="openFullImg(this.src)">
+        <img src="img/veronica.jpg" onclick="openFullImg(this.src)">
+        <img src="img/mencia.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex"; 
+            fullImg.src = pic;
+        }
+
+        function coloseFullImg(){
+            fullImgBox.style.display = "none";  
+        }
+    </script>
+    
+</body>
+</html>
